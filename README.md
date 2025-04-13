@@ -41,17 +41,6 @@ streamlit run app.py
 
 ---
 
-☁️ Déploiement Streamlit Cloud
-
-    Crée un dépôt GitHub avec tous les fichiers
-
-    Connecte Streamlit Cloud à ton compte GitHub
-
-    Crée une nouvelle app
-
-        Fichier principal : app.py
-
-    Clique sur Deploy 🟢
 
 📊 Mode simulation pédagogique
 
@@ -86,7 +75,7 @@ streamlit run app.py
 🙌 Auteurs
 
 Projet open source initié par Lemamm
-aidé par ChatGPT | Contributions bienvenues !
+Contributions bienvenues !
 📄 Licence
 
 MIT — Libre d'utilisation à des fins éducatives, citoyennes ou scientifiques.
