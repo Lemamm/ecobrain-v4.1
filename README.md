@@ -1,34 +1,92 @@
-# 🌍 EcoBrain v4.1 – IA augmentée pour la transition écologique
+# 🌍 EcoBrain v4.1 – Intelligence Artificielle pour la transition écologique
 
-**EcoBrain** est une IA éthique et pédagogique conçue pour guider les citoyens, collectivités et entreprises vers des actions environnementales personnalisées et mesurables.
-
-La version **4.1** intègre des modules intelligents, un score global environnemental (type NutriScore), un système d'historique comparatif et des outils d’exportation de rapport.
+**EcoBrain v4.1** est un prototype de cerveau planétaire numérique, guidé par une IA transparente, éthique et éducative.  
+Il propose des **conseils personnalisés pour réduire votre impact environnemental**, visualiser vos progrès et simuler des scénarios collectifs.
 
 ---
 
 ## 🧠 Fonctionnalités clés
 
-- ✅ IA DQN simplifiée pour suggérer des actions personnalisées
-- ✅ Score environnemental global de A à E basé sur 6 à 8 modules
-- ✅ Modules thématiques : mobilité, eau, déchets, solaire, électroménager
-- 📈 Historique des scores hebdomadaires + comparateur d’évolution
-- 🗂 Mode simulation pour écoles, collectivités, ONG (sans données privées)
-- 📦 Export PDF de son impact écologique
-- 🎨 Interface visuelle avec bannière, logo et favicon personnalisables
+- ✅ **Suggestions IA contextuelles** via un agent DQN
+- 📊 **Score écologique global** (type NutriScore de A à E)
+- 🧩 **Modules spécialisés** : mobilité, eau, déchets, énergie solaire, électroménagers…
+- 📈 **Historique et comparaison** des efforts hebdomadaires
+- 🗂 **Mode simulation** pour collectivités, écoles, quartiers
+- 📦 **Export PDF** de votre rapport environnemental
+- 🎨 **Interface visuelle** avec bannière, logo et navigation claire
 
 ---
 
-## 📁 Structure du projet
+## 🧱 Structure du projet
 
-ecobrain_v4.1/ │ ├── app.py ← Application principale Streamlit ├── modules/ ← Modules d’analyse par domaine │ ├── mobility.py │ └── scoring.py ├── utils/ ← Fonctions transversales │ ├── history_manager.py │ └── pdf_export.py ├── assets/ ← Favicon, logo, bannière │ ├── banner.html │ ├── logo.png │ └── favicon.ico ├── data/ ← Données régionales ou utilisateur simulées │ └── sample_data.json ├── requirements.txt ← Dépendances Python └── README.md ← Ce fichier
+ecobrain_v4.1/ ├── app.py ← Interface principale Streamlit ├── requirements.txt ← Dépendances Python │ ├── modules/ ← Analyse par thème │ ├── mobility.py │ └── scoring.py │ ├── utils/ ← Historique & PDF │ ├── history_manager.py │ └── pdf_export.py │ ├── assets/ ← Logo, favicon, bannière HTML │ ├── banner.html │ ├── logo.png │ └── favicon.ico │ └── data/ ← Données régionales ou simulées └── sample_data.json
+
 
 ---
 
-## 🚀 Lancer l’application en local
+## 🚀 Lancement local
 
+1. Cloner le dépôt :
 ```bash
 git clone https://github.com/ton_utilisateur/ecobrain_v4.1.git
 cd ecobrain_v4.1
+
+    Installer les dépendances :
+
 pip install -r requirements.txt
+
+    Lancer l’app :
+
 streamlit run app.py
 
+---
+
+☁️ Déploiement Streamlit Cloud
+
+    Crée un dépôt GitHub avec tous les fichiers
+
+    Connecte Streamlit Cloud à ton compte GitHub
+
+    Crée une nouvelle app
+
+        Fichier principal : app.py
+
+    Clique sur Deploy 🟢
+
+📊 Mode simulation pédagogique
+
+    Idéal pour des enseignants, mairies, collectivités territoriales ou étudiants.
+
+    Aucune donnée personnelle requise
+
+    Simule un comportement moyen pour une région ou une population
+
+    Permet de tester différents scénarios d’action collective
+
+🖨 Export PDF de votre rapport écologique
+
+    Score global
+
+    Modules notés
+
+    Historique et évolution
+
+    Format facile à imprimer ou partager (PDF ou CSV)
+
+🔮 Roadmap prochaine version (v4.2)
+
+    🔁 Connexion API open data (énergie, transport réel)
+
+    📡 Dashboard collaboratif (niveau quartier / ville)
+
+    🧠 Amélioration DQN + apprentissage long terme
+
+    🏆 Gamification éthique et collaborative
+
+🙌 Auteurs
+
+Projet open source initié par Lemamm
+aidé par ChatGPT | Contributions bienvenues !
+📄 Licence
+
+MIT — Libre d'utilisation à des fins éducatives, citoyennes ou scientifiques.
