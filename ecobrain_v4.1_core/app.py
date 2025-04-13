@@ -4,8 +4,11 @@ from utils import history_manager
 
 st.set_page_config(page_title="EcoBrain v4.1", page_icon="🌍", layout="wide")
 
-# with open("assets/banner.html", encoding="utf-8") as f:
-#     st.markdown(f.read(), unsafe_allow_html=True)
+try:
+    with open("assets/banner.html", encoding="utf-8") as f:
+        st.markdown(f.read(), unsafe_allow_html=True)
+except Exception as e:
+    st.warning(f"Bannière non chargée : {e}")
 
 st.sidebar.title("🌱 Navigation")
 page = st.sidebar.radio("Aller à", ["Accueil", "Mobilité", "Éco-score", "Historique"])
