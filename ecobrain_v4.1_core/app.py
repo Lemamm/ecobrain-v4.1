@@ -4,7 +4,7 @@ from utils import history_manager
 
 st.set_page_config(page_title="EcoBrain v4.1", page_icon="🌍", layout="wide")
 
-with open("assets/banner.html", encoding="utf-8") as f:
+wwith open("assets/banner.html", encoding="utf-8", errors="ignore") as f:
     st.markdown(f.read(), unsafe_allow_html=True)
 
 st.sidebar.title("🌱 Navigation")
